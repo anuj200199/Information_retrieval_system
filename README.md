@@ -3,8 +3,8 @@ This repository contains Basic Implementation of Information Retrieval Systems.
 
 <table>
   <tr>
-    <th>Folder</th>
-    <th>Description</th>
+    <th><i>Folder</i></th>
+    <th><i>Description</i></th>
   </tr>
   <tr>
     <td> Tf-Idf Vectorizer </td>
