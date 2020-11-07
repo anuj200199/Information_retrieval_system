@@ -30,7 +30,7 @@ for words in file_words:
 print("End preprocessing Steps")
 
 # Start TF-IDF.
-tf_idf = TfidfVectorizer()
+tf_idf = TfidfVectorizer()  # Ypu can also use Boolean and TF Models to compare performance
 X_data = tf_idf.fit_transform(stemmed_words)
 
 # To find similarity with the user Query
@@ -48,4 +48,5 @@ cosine_sim = cosine_similarity(X_data, X_user_query, dense_output=True)
 # Find top matching documents
 top_document_index = np.argmax(cosine_sim, axis=0)
 
+# Print the index of top matching document.
 print("The top matching document for the user Query: " + user_query + " is indexed at " + str(top_document_index[0]))
