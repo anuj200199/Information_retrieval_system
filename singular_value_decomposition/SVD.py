@@ -43,6 +43,7 @@ U = U[:, :9]
 user_Query = input("Enter User Query: ")
 user_Query = [user_Query]
 
+
 # Count Array of User Query
 query = vectorizer.transform(user_Query)
 count_user_query = query.toarray()
